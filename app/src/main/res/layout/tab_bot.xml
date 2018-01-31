@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tab_bottom"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="@dimen/size80">
+
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/colorGrayTran50"
+        android:layout_height="2dp">
+
+    </View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/iv_icon"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:contentDescription="@string/_1"
+            android:adjustViewBounds="true"
+            android:background="@mipmap/ic_launcher" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+
+            android:layout_weight="6"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/name"
+                android:maxLines="1"
+                android:textColor="@color/colorBlack"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/tv_singger"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/singger"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_play"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2.5"
+            android:padding="16dp"
+            android:contentDescription="@string/_1"
+            android:src="@mipmap/ic_pause_black_24dp" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/ic_launcher">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:background="@color/colorGrayTran50">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:contentDescription="@string/_1"
+            android:adjustViewBounds="true"
+            android:src="@mipmap/ic_launcher" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5.5"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:text="@string/name"
+                android:textColor="@color/colorBlack"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_singger"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/singger"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:contentDescription="@string/_1"
+            android:src="@mipmap/ic_queue_music_black_24dp" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:contentDescription="@string/_1"
+            android:src="@mipmap/ic_more_vert_black_24dp" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/click"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorGrayTran50"
+        android:orientation="vertical">
+
+        <SeekBar
+            android:id="@+id/seek_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_time_start"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:text="@string/_0_00" />
+
+            <TextView
+                android:id="@+id/tv_time_end"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:text="@string/_5_00" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/iv_like"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:contentDescription="@string/_1"
+                android:padding="12dp"
+                android:src="@mipmap/ic_thumb_up_black_24dp" />
+
+            <ImageView
+                android:id="@+id/iv_pre"
+                android:layout_width="0dp"
+                android:contentDescription="@string/_1"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="8dp"
+                android:src="@mipmap/ic_skip_previous_black_24dp" />
+
+            <ImageView
+                android:id="@+id/iv_play"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="2dp"
+                android:contentDescription="@string/_1"
+                android:src="@mipmap/ic_pause_black_24dp" />
+
+            <ImageView
+                android:id="@+id/iv_next"
+                android:layout_width="0dp"
+                android:contentDescription="@string/_1"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="8dp"
+                android:src="@mipmap/ic_skip_next_black_24dp" />
+
+            <ImageView
+                android:id="@+id/iv_dislike"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="12dp"
+                android:contentDescription="@string/_1"
+                android:src="@mipmap/ic_thumb_down_black_24dp" />
+        </TableRow>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/click_repeat"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_above="@id/click"
+        android:layout_marginBottom="16dp">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:contentDescription="@string/_1"
+            android:layout_weight="1"
+            android:src="@mipmap/ic_repeat_white_24dp" >
+        </ImageView>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:contentDescription="@string/_1"
+            android:layout_height="match_parent"
+            android:layout_weight="6" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="10dp"
+            android:contentDescription="@string/_1"
+            android:layout_weight="1"
+            android:src="@mipmap/ic_shuffle_white_24dp" />
+    </LinearLayout>
+</RelativeLayout>
